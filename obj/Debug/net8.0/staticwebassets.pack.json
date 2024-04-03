@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PortaFolio.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PortaFolio.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\Cyberpunk-2077-Keanu-Reeves-PNG-Clipart.png",
+      "PackagePath": "staticwebassets\\imagenes\\Cyberpunk-2077-Keanu-Reeves-PNG-Clipart.png"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\Proyecto CP.png",
+      "PackagePath": "staticwebassets\\imagenes\\Proyecto CP.png"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\Proyecto Cine.png",
+      "PackagePath": "staticwebassets\\imagenes\\Proyecto Cine.png"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\Proyecto Gestion.mp4",
+      "PackagePath": "staticwebassets\\imagenes\\Proyecto Gestion.mp4"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\Proyecto appGestion.png",
+      "PackagePath": "staticwebassets\\imagenes\\Proyecto appGestion.png"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\Ps4.jfif",
+      "PackagePath": "staticwebassets\\imagenes\\Ps4.jfif"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\fan.svg",
+      "PackagePath": "staticwebassets\\imagenes\\fan.svg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\gy73BE6NGi.png",
+      "PackagePath": "staticwebassets\\imagenes\\gy73BE6NGi.png"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\hero-inferior.svg",
+      "PackagePath": "staticwebassets\\imagenes\\hero-inferior.svg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\icons8-chatgpt.svg",
+      "PackagePath": "staticwebassets\\imagenes\\icons8-chatgpt.svg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\person-bounding-box.svg",
+      "PackagePath": "staticwebassets\\imagenes\\person-bounding-box.svg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\tifa.png",
+      "PackagePath": "staticwebassets\\imagenes\\tifa.png"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\udemy_logo_icon_168373.svg",
+      "PackagePath": "staticwebassets\\imagenes\\udemy_logo_icon_168373.svg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\yin-yang.svg",
+      "PackagePath": "staticwebassets\\imagenes\\yin-yang.svg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\yo.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\yo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\G4rNeTT\\source\\repos\\PortaFolio\\wwwroot\\imagenes\\yo1.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\yo1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PortaFolio.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PortaFolio.props",
+      "PackagePath": "build\\PortaFolio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PortaFolio.props",
+      "PackagePath": "buildMultiTargeting\\PortaFolio.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PortaFolio.props",
+      "PackagePath": "buildTransitive\\PortaFolio.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

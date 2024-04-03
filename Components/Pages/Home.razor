@@ -1,0 +1,277 @@
+﻿@page "/"
+
+<PageTitle>Andrés Fernández | Desarrollo Autodidacta</PageTitle>
+
+<!--Barra de navegacion-->
+<nav id="navbar" class="navbar navbar-expand-md bg-body-color fixed-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="/">
+                <i class="bi bi-yin-yang"></i>
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobreMi" onclick="closeNavbar()">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectosId" onclick="closeNavbar()">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#referenciasId" onclick="closeNavbar()">Referencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#contactosId" onclick="closeNavbar()">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/" onclick="closeNavbar()">Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--Seccion Hero-->
+<section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img  src="imagenes/yo.jpg" alt="Mi Foto" style="width:200px; height:auto; border-radius:20%;  margin:20px;"/>
+        <h1>Hola, soy Andrés Fernández</h1>
+        <h2>Desarrollo páginas web y aplicaciones.</h2>
+    </div>
+    <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg"/>
+    </div>
+</section>
+
+
+<!--Sobre mi-->
+<section id="sobreMi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Andres Fernandez</h2>
+        <p class="seccion-texto">¡Hola a todos! Soy Andrés Fernández, y me apasiona el mundo del desarrollo web y de aplicaciones. Con conocimientos en C#, HTML, CSS, y JS, he trabajado en una variedad de proyectos que van desde aplicaciones de consola y Windows Forms hasta Blazor y MVC. Todo comenzó hace un mes y medio cuando decidí aventurarme en este emocionante mundo, inspirado por mi hermana y mi padre. Estoy emocionado de seguir aprendiendo y creciendo en esta industria creativa y en constante evolución. ¡Gracias por visitar mi portafolio y espero tener la oportunidad de trabajar juntos en el futuro!</p>
+    </div>
+</section>
+
+<!--Experiencia-->
+<section class="experiencia seccion-clara">
+    <div class="container text-center">
+        <div class="row">
+            <!--Desarrollo Web-->
+            <div class="columna col-12 col-md-4">
+                <i class="bi bi-laptop"></i>
+                <p class="experiencia-titulo">Desarrollo Web</p>
+                <p>He participado en proyectos de desarrollo web utilizando HTML, CSS y JavaScript, donde he creado formularios interactivos y aplicaciones web. Además, he trabajado con React en la implementación de interfaces dinámicas y responsivas.</p>
+                <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">HTML</span>
+                    <span class="badge text-bg-primary">CSS</span>
+                    <span class="badge text-bg-primary">JavaScript</span>
+                    <span class="badge text-bg-primary">React</span>
+                </div>
+            </div>
+            <!--Aplicaciones-->
+            <div class="columna col-12 col-md-4">
+                <i class="bi bi-cpu"></i>
+                <p class="experiencia-titulo">Aplicaciones</p>
+                <p>He desarrollado aplicaciones de consola utilizando C#, donde he aplicado conceptos de programación orientada a objetos mediante la creación de clases y métodos. Además, he incursionado en el desarrollo de aplicaciones web utilizando tecnologías como Blazor y MVC, así como en la creación de interfaces de usuario utilizando Windows Forms en entornos de escritorio.</p>
+                <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">Consola</span>
+                    <span class="badge text-bg-primary">MVC</span>
+                    <span class="badge text-bg-primary">Blazor</span>
+                    <span class="badge text-bg-primary">W-Forms</span>
+                </div>
+            </div>
+            <!--Formación-->
+            <div class="columna col-12 col-md-4">
+                <i class="bi bi-mortarboard"></i>
+                <p class="experiencia-titulo">Formación</p>
+                <p>Mi formación ha sido principalmente autodidacta, donde he explorado diversos recursos en línea. He utilizado plataformas como Udemy para realizar bootcamps que me han brindado una base sólida en tecnologías como C#. Además, he complementado mi aprendizaje con tutoriales de YouTube y documentación oficial de Microsoft. Además, he interactuado con herramientas como ChatGPT para resolver dudas y profundizar en conceptos clave.</p>
+                <div class="badges-contenedor">
+                    <span class="badge text-bg-primary">BootCamps</span>
+@*                     <span class="badge text-bg-primary">Desarrollo Web</span>
+ *@                    <span class="badge text-bg-primary">C#</span>
+                    <span class="badge text-bg-primary">AutoDidácta</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Proyectos-->
+<section id="proyectosId" class="proyectos-recientes seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son los proyectos que he creado ultimamente...</h3>
+    <!--Galería de proyectos-->
+    <div class="container text-center proyectos-contenedor">
+        <div class="row">
+            <!--Proyecto 1-->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                    <img src="/imagenes/Proyecto Cine.png" alt="Proyecto W-Forms App Cine" />
+                    <div class="overlay">
+                        <p>Aplicación de Cine</p>
+                        <div class="iconos-contenedor">
+                            <a href="https://github.com/bigtikett/Proyectos" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://github.com/bigtikett/Proyectos" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-laptop"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Proyecto 2-->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                    <img src="/imagenes/Proyecto CP.png" alt="Proyecto Web Cyberpunk" />
+                    <div class="overlay">
+                        <p>Página Web CyberPunk2077</p>
+                        <div class="iconos-contenedor">
+                            <a href="https://github.com/bigtikett/Project-webCP/tree/master" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://github.com/bigtikett/Project-webCP/tree/master/" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-laptop"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Proyecto 3-->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                    <img src="/imagenes/Proyecto appGestion.png" alt="Proyecto 1" />
+                    <div class="overlay">
+                        <p>AplicaciónWeb de Empresas</p>
+                        <div class="iconos-contenedor">
+                            <a href="https://github.com/bigtikett/" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://github.com/bigtikett/" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-laptop"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <a href="https://github.com/bigtikett/" target="_blank" rel="noopener noreferrer">
+    <button type="button" class="btn btn-info">
+        Ver más proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+    </button>
+    </a>
+</section>
+
+<!--Referencias-->
+<section id="referenciasId" class="referencias seccion-oscura">
+    <h2 class="seccion-titulo">Referencias</h2>
+    <h3 class="seccion-descripcion texto-blanco">Estas son mis referencias de aprendizaje y proyectos...</h3>
+    
+    <!--Carousel-->
+    <div id="referencias-carousel" class="carousel slide">
+        <!-- Indicadores del carrusel -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#referencias-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#referencias-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#referencias-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <img class="referencia-imagen rounded-circle" src="/imagenes/tifa.png" style="background-color:white" alt="Foto referente1" />
+                    <p class="referente-texto scrollbar-thin scrollbar-autohide">Mi hermana ha sido una invaluable mentora en mi viaje de aprendizaje en programación y diseño web. A través de sus detallados PDF de ejercicios y clases presenciales, me ha proporcionado las bases sólidas de conocimientos en HTML, CSS y programación que necesitaba para iniciar mi carrera en este campo. Su dedicación y enseñanza personalizada han sido fundamentales para mi crecimiento y desarrollo en estas áreas, brindándome la confianza y habilidades necesarias para enfrentar desafíos con éxito.</p>
+                    <div class=" referente-info">
+                        <p class="cliente">Francisca</p>
+                        <p class="cargo">Senior Full Stack JDA.</p>
+                    </div>
+                </div>                
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <img class="referencia-imagen rounded-circle" src="/imagenes/icons8-chatgpt-svg.svg" style="background-color: rgb(25, 195, 125); border-radius:100%;" alt="Foto referente2" />
+                    <p class="referente-texto scrollbar-thin scrollbar-autohide">Gracias a ChatGPT, he dominado la programación y el desarrollo web de manera autodidacta, expandiendo mis habilidades y creando nuevas oportunidades.  </p>
+                    <div class=" referente-info">
+                        <p class="cliente">Chat GPT</p>
+                        <p class="cargo">Inteligencia Artificial de OpenAI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <img class="referencia-imagen rounded-circle" src="/imagenes/udemy_logo_icon_168373.svg" alt="Foto referente3" />
+                    <p class="referente-texto scrollbar-thin scrollbar-autohide">Mi trayectoria educativa se ha enriquecido significativamente mediante la participación activa en numerosos cursos disponibles en la plataforma de Udemy. Esta experiencia de aprendizaje autodidacta me ha permitido explorar una amplia gama de temas de habilidades técnicas, proporcionándome una base sólida de conocimientos y habilidades para enfrentar desafíos profesionales con confianza y creatividad. Los cursos en Udemy han sido una fuente invaluable de aprendizaje continuo, permitiéndome mantenerme actualizado en un entorno en constante evolución.  </p>
+                    <div class=" referente-info">
+                        <p class="cliente">Udemy</p>
+                        <p class="cargo">Cursos de Bootcamps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#referencias-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#referencias-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>       
+    </div>
+</section>
+
+<!--Contacto-->
+<section id="contactosId" class="contacto seccion-clara">
+    <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                    ¡Hablemos!
+                </div>
+                <div class="col12 col-md-4 descripcion">
+                    Contáctame para iniciar tu proyecto en mente para desarrollo web y aplicaciones, y haré que se haga realidad!
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="mailto:bigtikett@gmail.com">
+                        <button type="button">
+                            Contacto
+                            <i class="bi bi-envelope-at-fill"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--Pie de página (footer)-->
+<footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-icono" src="/imagenes/yin-yang.svg" alt="Logo de portafolio" />
+    <p class="footer-texto text-center">Aprendo y creo todos los días.<br />Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:bigtikett@gmail.com" target="_blank" rel="noreferrer noopener">
+            <i class="bi bi-envelope"></i>
+        </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Andrés Fernandez (2024) &#169;</div>
+</footer>

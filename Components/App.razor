@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Titulo-->
+    <title>Andrés Fernández | Desarrollo Autodidacta</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/yin-yang-svg.svg"/>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--MetaDatos-->
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrés Fernández"/>
+    <meta name="description" content="Portafolio de desarrollo autodidacta"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, React"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <!--CSS-->
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="PortaFolio.styles.css" />
+    <!--Google·Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <HeadOutlet @rendermode="InteractiveServer" />
+</head>
+
+<body>
+    <Routes @rendermode="InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.add("navbar-transparent");
+            } else {
+                navbar.classList.remove("navbar-transparent");
+            }
+        }
+        function closeNavbar() {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navbar = document.querySelector('.navbar-collapse');
+
+            if (navbar.classList.contains('show')) { // Verificar si el menú desplegable está abierto
+                setTimeout(function () {
+                    navbarToggler.click(); // Simular un clic en el botón del toggler para cerrar el menú
+                }, 100); // Esperar 100 milisegundos antes de cerrar el menú
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
