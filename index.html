@@ -34,7 +34,7 @@
            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">            
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="inicio">
                 <i class="bi bi-yin-yang"></i>
             </a>            
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
@@ -359,12 +359,7 @@ document.querySelectorAll('.navbar-nav a').forEach(link => {
             closeNavbar(); // Cierra la barra de navegación
         });
     });    
-        // Agrega un evento click al icono que lleva al inicio de la página
-document.getElementById('navbar-brand').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Hace scroll suavemente hasta arriba
-});
-
+        
        </script>
 </body>
 </html>
