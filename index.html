@@ -325,44 +325,46 @@
     <script src="/PortaFolio/_framework/blazor.web.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        // Función para hacer scroll hacia una sección específica
-function scrollToSection(id) {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.add("navbar-transparent");
+            } else {
+                navbar.classList.remove("navbar-transparent");
+            }
+        }
+        function closeNavbar() {
+            var navbarToggler = document.querySelector('.navbar-toggler');
+            var navbar = document.querySelector('.navbar-collapse');
+
+            if (navbar.classList.contains('show')) { // Verificar si el menú desplegable está abierto
+                setTimeout(function () {
+                    navbarToggler.click(); // Simular un clic en el botón del toggler para cerrar el menú
+                }, 100); // Esperar 100 milisegundos antes de cerrar el menú
+            }
+        }
+        function scrollToSection(id) {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     }
-}
-
-// Agrega un evento click a todos los enlaces del menú de navegación
 document.querySelectorAll('.navbar-nav a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-        const targetId = this.getAttribute('href').substring(1); // Obtiene el ID de la sección objetivo
-        scrollToSection(targetId); // Desplaza suavemente a la sección objetivo
-        closeNavbar(); // Cierra la barra de navegación
-    });
-});
-
-// Agrega un evento click al enlace de inicio
-document.getElementById('inicio').addEventListener('click', function(event) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            const targetId = this.getAttribute('href').substring(1); // Obtiene el ID de la sección objetivo
+            scrollToSection(targetId); // Desplaza suavemente a la sección objetivo
+            closeNavbar(); // Cierra la barra de navegación
+        });
+    });    
+        // Agrega un evento click al icono que lleva al inicio de la página
+document.getElementById('navbar-brand').addEventListener('click', function(event) {
     event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    scrollToSection('inicio'); // Hace scroll hasta la sección de inicio
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Hace scroll suavemente hasta arriba
 });
 
-// Función para hacer scroll hacia arriba
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Agrega un evento click al botón de scroll hacia arriba
-document.getElementById('boton-scroll-arriba').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-    scrollToTop(); // Hace scroll hacia arriba
-});
-
-     
-   
-
-    </script>
+       </script>
 </body>
 </html>
