@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <HeadOutlet @rendermode="InteractiveServer" />
 </head>
-<body>  
+<body id="inicio">  
 
 <!--Barra de navegacion-->
 
@@ -34,7 +34,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="#inicio">
                 <i class="bi bi-yin-yang"></i>
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
@@ -51,7 +51,7 @@
                     <a class="nav-link " href="#contactosId" onclick="closeNavbar()">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="/" onclick="closeNavbar()">Inicio</a>
+                    <a class="nav-link " href="#inicio" onclick="closeNavbar()">Inicio</a>
                 </li>
             </ul>
         </div>
