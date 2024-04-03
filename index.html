@@ -31,7 +31,9 @@
 <nav id="navbar" class="navbar navbar-expand-md bg-body-color fixed-top">
     <div class="container-fluid">
         <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+           <a class="navbar-brand" href="#inicio">
+                <i class="bi bi-yin-yang"></i>
+            </a>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">            
                 <i class="bi bi-yin-yang navbar-brand"></i>            
@@ -357,6 +359,11 @@ document.querySelectorAll('.navbar-nav a').forEach(link => {
             closeNavbar(); // Cierra la barra de navegación
         });
     });
+        document.getElementById('inicio').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Hace scroll suavemente hasta arriba
+});
+
     </script>
 </body>
 </html>
