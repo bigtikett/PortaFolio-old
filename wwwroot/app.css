@@ -2,7 +2,7 @@ h1:focus {
     outline: none;
 }
 body {
-    padding-top: 110px; /* Altura del navbar en píxeles */
+    padding-top: 110px; /* Altura del navbar en pÃ­xeles */
     background-color:aliceblue;
 }
 .valid.modified:not([type=checkbox]) {
@@ -30,7 +30,7 @@ body {
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
 }
-/*Barra de navegación*/
+/*Barra de navegaciÃ³n*/
 
 .navbar{
     padding:1rem;
@@ -61,7 +61,7 @@ body {
         color: #279CDC; /* Cambia "your_color_here" por el color que desees */
     }
 .navbar-transparent {
-    background-color: rgba(0, 0, 0, 0.8); /* Cambia los valores rgba según la transparencia deseada */
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia los valores rgba segÃºn la transparencia deseada */
 }
 #navbar .navbar-toggler.custom-toggler .navbar-toggler-icon {
     transition: box-shadow 0.15s ease-in-out;
@@ -75,7 +75,7 @@ body {
 }
 #navbar .navbar-toggler.custom-toggler:focus,
 #navbar .navbar-toggler.custom-toggler:active {
-    box-shadow: 0 0 0 0.2rem rgba(39, 156, 220, 0.5); /* Cambiar el color de la sombra cuando el menú está activo */
+    box-shadow: 0 0 0 0.2rem rgba(39, 156, 220, 0.5); /* Cambiar el color de la sombra cuando el menÃº estÃ¡ activo */
 }
 
 
@@ -89,7 +89,8 @@ section{
 }
 h1{
     font-size:2.5rem;
-    font-family:'Blender Pro';
+    font-family:"IBM Plex Sans Condensed", sans-serif;
+    font-weight: bold;
 }
 .seccion-oscura{
     background-color: #1b1b32;
@@ -104,7 +105,7 @@ h1{
 .seccion-titulo{
     font-size:2rem;
     padding:15px 0;
-    font-family: Copystruct, cursive;
+    font-family: "Rubik Dirt", cursive;
 }
 .seccion-descripcion {
 font-size:1.2rem;
@@ -143,7 +144,7 @@ color:#584e4e;
 }
 .hero-principal h2{
     font-size:1.5rem;
-    font-family:'Blender Pro';
+    font-family:"IBM Plex Sans Condensed", sans-serif;
     color:dimgrey;
 }
 /*Sobre mi*/
